@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %} Book Details from Goodreads API {% endblock %}
+
+{% block body %}
+       <h4 class="card-header">Book Information from Goodreads API</h4>
+      <div class="card-body">
+
+        <strong><h6>Goodreads average_rating: </strong>{{ data.books[0].average_rating }}</h6>
+        <strong><h6>Goodreads work review count: </strong>{{ data.books[0].work_reviews_count }}</h6>
+        <strong><h6>Goodreads work rating count: </strong>{{ data.books[0].work_ratings_count }}</h6>
+        <strong><h6>Goodreads rating count: </strong>{{ data.books[0].ratings_count }}</h6>
+        <strong><h6>Goodreads reviews count: </strong>{{ data.books[0].reviews_count }}</h6>
+
+      </div>
+
+{% endblock %}

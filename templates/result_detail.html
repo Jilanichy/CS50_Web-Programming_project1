@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %} Details of a single book {% endblock %}
+
+{% block body %}
+
+    <div class="card w-75">
+         <h4 class="card-header">Book Details</h4>
+      <div class="card-body">
+        <strong><h6>Book Name: </strong>{{ book.title }}</h6>
+        <strong><h6>Author: </strong>{{ book.author }}</h6>
+        <strong><h6>Year: </strong>{{ book.year }}</h6>
+        <strong><h6>ISBN: </strong>{{ book.isbn }}</h6>
+        </div>
+
+        <a href="/goodreads/{{book.isbn}}">
+            <h4 class="card-header">Book Information via Goodreads API</h4>
+        </a>
+
+        <h4 class="card-header">Your Rating and Review</h4>
+      <div class="card-body">
+        <strong><h6>Your Rating: </strong>{{ rating }}</h6>
+        <strong><h6>Your Review: </strong>{{ review }}</h6>
+      </div>
+    </div>
+
+    <div class="card w-75">
+        <h4 class="card-header">Give your Review and Rating</h4>
+      <div class="card-body">
+        <form action="" class="" method="POST">
+            <div class="form-group">
+
+            <select name="rating" class='m-1' required>
+                <option selected value disabled> -- Your Rating -- </option>
+                <option value="1">1 star</option>
+                <option value="2">2 stars</option>
+                <option value="3">3 stars</option>
+                <option value="4">4 stars</option>
+                <option value="5">5 stars</option>
+            </select>
+
+            </div>
+            <div class="form-group">
+                <textarea class='form-control' name="review" placeholder="Your Review">
+                </textarea>
+            <div class="form-group">
+                <button class="btn btn-secondary">Post Your Review</button>
+            </div>
+
+        </form>
+      </div>
+    </div>
+
+{% endblock %}

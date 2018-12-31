@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %} Search Books ISBN, Title, and Author {% endblock %}
+
+{% block body %}
+
+    <br>
+
+    <form class="form-inline" method="POST" action="">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search books" aria-label="Search" name="search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+
+{% endblock %}
