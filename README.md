@@ -1,4 +1,4 @@
-# Project 1
+# Project 1 - Books
 
 ## Web Programming with Python and JavaScript
 ### Provided by Harvard University (HarvardX)
