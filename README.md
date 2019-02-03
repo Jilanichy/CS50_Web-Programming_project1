@@ -20,3 +20,5 @@
 * User can view the Goodreads user average ratings, count and other info.
 
 * If user make GET request to this route /api/<isbn>, it returns JSON objects for particular book, it is an API access for this website.
+  
+* Quick Walkthrough - https://www.youtube.com/watch?v=lBSeauPbvTM
